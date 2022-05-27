@@ -1,7 +1,7 @@
 
 from abc import abstractmethod, ABC
 
-class Laptop():        
+class Laptop(ABC):        
     @abstractmethod
     def Screen(): 
         raise NotImplementedError('This method was not implemented')
