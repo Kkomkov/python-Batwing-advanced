@@ -1,0 +1,17 @@
+mkdir linux_lecture; touch notes.txt
+cp notes.txt linux_lecture/
+ls linux_lecture/ -i
+ls ~/ -lar
+mv notes.txt new_notes.txt
+rm linux_lecture/notes.txt new_notes.txt
+touch homework.sh -t 202001010415 
+touch linux_lecture/hw.sh linux_lecture/hw1.sh linux_lecture/hw2.sh linux_lecture/hw1.txt
+find *.txt
+mkdir -p lectures_new && find *.txt | xargs cp -t lectures_new 
+echo 'linux_lecture' >> homework.sh
+cat  homework.sh
+chmod  -x homework.sh
+chmod  +rwx homework.sh
+./homework.sh
+>./notes.sh echo "ls"&&chmod -x !#:1
+./notes.sh
