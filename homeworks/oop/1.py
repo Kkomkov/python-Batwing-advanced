@@ -1,34 +1,34 @@
-from re import A
+#from re import A
 
 
 class Animal:
-    def eat():
+    def eat(self):
         pass
 
-    def sleep():
+    def sleep(self):
         pass
 
 class Worm(Animal):
-    def poop():
+    def poop(self):
         pass
 
 class Dog(Animal):
-    def run():
+    def run(self):
         pass
 
 class Cat(Animal):
-    def scratch(): 
+    def scratch(self): 
         pass
 
 class Bird(Animal):
-    def fly():
+    def fly(self):
         pass
 
-    def stuck_in_mouth():
+    def stuck_in_mouth(self):
         pass
 
 class Tree():
-    def grow_up():
+    def grow_up(self):
         pass
 
 worm = Worm()
@@ -38,27 +38,27 @@ bird= Bird()
 tree = Tree()
 
 class Horce(Animal):
-    def run_on_4_legs():
+    def run_on_4_legs(self):
         pass
-    def kick_with__2_legs():
+    def kick_with_2_legs(self):
         pass
 
 class Human(Animal):
-    def study():  pass
+    def study(self):  pass
 
-    def work():
+    def work(self):
         print("doing hard job")
 
 class Centaur(Human,Horce):
-    def shoot_on_run():
+    def shoot_on_run(self):
         pass
 
 
 creature = Centaur()
-creature.kick_with__2_legs
-creature.shoot_on_run
-creature.kick_with__2_legs
-creature.work
+creature.kick_with_2_legs()
+creature.shoot_on_run()
+creature.kick_with_2_legs()
+creature.work()
 
 for animal in (worm,cat,dog,bird,tree,creature):
     print(animal.__class__.__name__, "Is animal subclass :",issubclass(animal.__class__,Animal))

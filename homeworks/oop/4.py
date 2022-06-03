@@ -3,43 +3,43 @@ from abc import abstractmethod, ABC
 
 class Laptop(ABC):        
     @abstractmethod
-    def Screen(): 
+    def screen(self): 
         raise NotImplementedError('This method was not implemented')
     @abstractmethod
-    def Keyboard(): 
+    def keyboard(self): 
         raise NotImplementedError('This method was not implemented')
     @abstractmethod
-    def Touchpad(): 
+    def touchpad(self): 
         raise NotImplementedError('This method was not implemented')
     @abstractmethod
-    def WebCam(): 
+    def web_cam(self): 
         raise NotImplementedError('This method was not implemented')
     @abstractmethod
-    def Ports(): 
+    def ports(self): 
         raise NotImplementedError('This method was not implemented')
     @abstractmethod
-    def Dynamics(): 
+    def dynamics(self): 
         raise NotImplementedError('This method was not implemented')
     
 
 class HPLaptop(Laptop):
-    def Screen(): 
+    def screen(self): 
         pass
    
-    def Keyboard(): 
+    def keyboard(self): 
         pass
     
-    def Touchpad(): 
+    def touchpad(self): 
         pass
     
-    def WebCam(): 
+    def web_cam(self): 
         pass
     
-    def Ports(): 
+    def ports(self): 
         pass
     
-    def Dynamics(): 
-        pass
+    def dynamics(self): 
+        print ("Hp laptop make beeps")
 
 mylaptop = HPLaptop()
-mylaptop.Dynamics
+mylaptop.dynamics()

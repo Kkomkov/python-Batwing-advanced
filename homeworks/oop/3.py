@@ -11,11 +11,10 @@ class Profile:
     age = None
     sex = None
     def __str__(self):        
-        return (self.name.__str__()+" "+self.last_name.__str__()+" "+self.phone_number.__str__()+" "
-        +self.address.__str__()+" "+self.email.__str__()+" "+self.birthday.__str__()+" "+self.age.__str__()+" "+self.sex.__str__())
+        return (f"{self.name},{self.last_name},{self.phone_number},{self.address},{self.email},{self.birthday},{self.age} years,{self.sex}")
 
 myProfile = Profile()
 myProfile.name="Me"
 myProfile.age=10
-
+myProfile.sex="male"
 print(myProfile)
