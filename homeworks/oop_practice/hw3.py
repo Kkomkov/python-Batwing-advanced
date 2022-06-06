@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod  
 import random
-
+from typing import List
 class Person():
     def __init__(self, name, age, money_amount, have_home):
         self._name = name
@@ -64,7 +64,7 @@ class EstateAgentMeta(type):
         return cls._instances[cls]
 
 class EstateAgent(metaclass = EstateAgentMeta):
-    def __init__(self, name:str, houses:list[House] , discounts:int, scam_chance:int):
+    def __init__(self, name:str, houses:List[House] , discounts:int, scam_chance:int):
         self._name = name
         self._houses = houses
         self._discounts = discounts
