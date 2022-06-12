@@ -1,0 +1,10 @@
+root@5669dc6937de:/usr/games# cat ./story.txt|./cowsay
+ _______________________
+< How does the fox say? >
+ -----------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+root@5669dc6937de:/usr/games# 
