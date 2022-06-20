@@ -5,7 +5,7 @@ from classes import ClassForTest
 class TestForClasses(unittest.TestCase):
 
     def setUp(self):
-        self.classTest = ClassForTest(2, 3)
+        self.classTest = ClassForTest(2, 4)
 
     def test_class_dif(self):
         self.assertEqual(self.classTest.check_dif(), -2)
