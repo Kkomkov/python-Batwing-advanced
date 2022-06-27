@@ -1,11 +1,37 @@
+
 from app import app
 from helpers.file import get_users, write_users
 from flask import render_template, request, redirect
 
 
+
+def filter_users(users,parameters):
+    if (parameters):
+        parameter_email = parameters.get("email")
+        parameter_first_name = parameters.get("first_name")
+        parameter_last_name = parameters.get("last_name")
+        parameter_work_area= parameters.get("work_area")
+        
+        
+        if(parameter_email) :
+            users = filter(lambda element : element['email'] == parameter_email,users)
+        
+        if(parameter_first_name) :
+            users = filter(lambda element : element['first_name']== parameter_first_name,users)
+        
+        if(parameter_last_name) :
+            users = filter(lambda element : element['last_name'] == parameter_last_name,users)
+        
+        if(parameter_work_area) :
+            users = filter(lambda element : element['work_area'] == parameter_work_area,users)
+    return users
+
+
 @app.route("/")
+@app.route("/search")
 def main():
     users = get_users()
+    users = filter_users(users,request.args )
     return render_template("index.html", users=users)
 
 
