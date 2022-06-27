@@ -2,7 +2,7 @@
 from app import app
 from helpers.file import get_users, write_users
 from flask import render_template, request, redirect
-
+import logging, sys
 
 
 def filter_users(users,parameters):
@@ -12,6 +12,10 @@ def filter_users(users,parameters):
         parameter_last_name = parameters.get("last_name")
         parameter_work_area= parameters.get("work_area")
         
+        logging.debug(f'email: {parameter_email}')
+        logging.debug(f'first_name: {parameter_first_name}')
+        logging.debug(f'last_name: {parameter_last_name}')
+        logging.debug(f'work_area: {parameter_work_area}')
         
         if(parameter_email) :
             users = filter(lambda element : element['email'] == parameter_email,users)
@@ -24,14 +28,17 @@ def filter_users(users,parameters):
         
         if(parameter_work_area) :
             users = filter(lambda element : element['work_area'] == parameter_work_area,users)
+        
+        logging.debug(f'user: {users}')
     return users
 
 
 @app.route("/")
-@app.route("/search")
 def main():
+    logging.basicConfig(stream=sys.stderr, level=logging.DEBUG)
     users = get_users()
     users = filter_users(users,request.args )
+        
     return render_template("index.html", users=users)
 
 

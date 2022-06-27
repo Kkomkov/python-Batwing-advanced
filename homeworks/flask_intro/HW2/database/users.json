@@ -1,1 +1,7 @@
-[{"id": 1, "email": "l.luzhnuy@gmail.com", "first_name": "Liubomyr", "last_name": "Luzhnyi", "work_area": "RedRocket"}, {"id": 2, "email": "zelenskiy@gmail.com", "first_name": "Volodymyr 2", "last_name": "Zelenskiy", "work_area": "Aparat Presidenta"}, {"id": 3, "email": "aparat@gmail.com", "first_name": "Ivan", "last_name": "Aparat", "work_area": "Epam"}]
+[{"id": 1, "email": "l.luzhnuy@gmail.com", "first_name": "Liubomyr", "last_name": "Luzhnyi", "work_area": "RedRocket"}, 
+    {"id": 2, "email": "zelenskiy@gmail.com", "first_name": "Volodymyr 2", "last_name": "Zelenskiy", "work_area": "Aparat Presidenta"}, 
+    {"id": 3, "email": "aparat@gmail.com", "first_name": "Ivan", "last_name": "Aparat", "work_area": "Epam"},
+    {"id": 4, "email": "aparat1@gmail.com", "first_name": "Ivan", "last_name": "Aparat1", "work_area": "Epam"},
+    {"id": 5, "email": "aparat2@gmail.com", "first_name": "Ivan", "last_name": "Aparat2", "work_area": "Epam"},
+    {"id": 6, "email": "aparat3@gmail.com", "first_name": "Ivan", "last_name": "Aparat3", "work_area": "Epam"}
+]
