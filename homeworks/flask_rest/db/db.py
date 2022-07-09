@@ -1,5 +1,6 @@
 class UserDB:
-    users = [{"name": "test", "email": "test@test.com", "password": "passhash"}]
+    users = [{"name": "test", "email": "test@test.com", "password": "passhash"} , 
+             {"name": "aaa", "email": "dddd@test.com", "password": "23123"}]
 
     def get_all(self):
         return self.users

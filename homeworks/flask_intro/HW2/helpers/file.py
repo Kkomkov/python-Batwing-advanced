@@ -3,7 +3,7 @@ from config import Config
 
 
 def get_users():
-    file = open(Config.file_path, "r")
+    file = open(Config.file_path,"r")
     file_data = json.loads(file.read())
     file.close()
     return file_data
